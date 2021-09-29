@@ -68,20 +68,6 @@ test_udev_SOURCES = \
 test_udev_LDADD = \
 	$(common_ldadd)
 
-
-dist_man_MANS = \
-	udev.7 \
-	udevadm.8 \
-	udevd.8
-
-EXTRA_DIST = \
-	udev.xml \
-	udevadm.xml \
-	udevd.xml
-
-%.7 %.8 : %.xml
-	$(XSLTPROC) -nonet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl $<
-
 MAINTAINERCLEANFILES = \
 	$(dist_man_MANS)
 

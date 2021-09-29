@@ -35,6 +35,8 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <sys/ioctl.h>
+#include <sys/time.h>
+#include <sys/resource.h>
 #ifdef HAVE_INOTIFY
 #include <sys/inotify.h>
 #endif
